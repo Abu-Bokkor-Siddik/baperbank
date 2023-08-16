@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="mx-auto text-center text-8xl ">Baper Bank </header>
+    <main class="flex gap-10 justify-evenly mt-20">
+        <div class="bg-red-300 w-64 h-28 mx-5">
+            <p class="text-3xl text-center">Diposit</p>
+            <p class="text-4xl text-center">$ <span id="dipositspan">00</span></p>
+        </div>
+
+
+        <div class="bg-orange-300 w-64 h-28 mx-5">
+            <p class="text-3xl text-center">Withdraw</p>
+            <p class="text-4xl text-center">$ <span id="withdrawspan">00</span></p>
+        </div>
+
+
+
+        <div class="bg-lime-400 w-64 h-28 mx-5">
+            <p class="text-3xl text-center">Balance</p>
+            <p  class="text-4xl text-center">$ <span id="balanceid">1200</span></p>
+        </div>
+    </main>
+    <section class="flex justify-center gap-10">
+        <div class="bg-red-200 my-20 w-96 h-36 pl-10">
+        <p class="text-3xl text-slate-100">Your Diposit</p>
+        <input id="dipositinput" class="w-60 px-3 py-1 rounded my-4" type="text"><br>
+        <button id="dipositid" class="btn  py-1 px-2 rounded-md text-slate-800 border-t-indigo-500 bg-lime-400 ">Diposit</button>
+    </div>
+
+
+
+
+    <div class="bg-red-200 my-20 w-96 h-36 pl-10">
+        <p class="text-3xl text-slate-100">Your Withdraw</p>
+        <input id="withdrowinput" class="w-60 px-3 py-1 rounded my-4" type="text"><br>
+        <button id="withdrowid" class="btn  py-1 px-2 rounded-md text-slate-800 border-t-indigo-500 bg-lime-400 ">Withdraw</button>
+    </div>
+    </section>
+    <script src="./diposit.js"></script>
+</body>
+</html>
